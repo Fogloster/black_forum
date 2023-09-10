@@ -1,0 +1,225 @@
+body {
+  margin: 0;
+  padding: 15px 20px;
+  min-height: 99%;
+  width: 100%;
+  min-width: 550px;
+  color: #4AF626;
+  background: #010101;
+  font-family: cursor, monospace;
+  overflow-x: hidden;
+}
+::selection {
+  color: #211830;
+  background-color: #4AF626;
+}
+::-moz-selection {
+  color: #211830;
+  background-color: #4AF626;
+}
+textarea {
+  left: -1000px;
+  position: absolute;
+}
+b {
+  font-weight: bold;
+  text-decoration: underline;
+}
+p {
+  cursor: default;
+}
+.cursedWord {
+  cursor: not-allowed; 
+}
+ul {
+  padding-left: 0;
+}
+li {
+  list-style: none;
+}
+.line {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+img {
+  display: none;
+}
+.hiddenImg:hover + img {
+  display: block;
+  position: absolute; 
+  top: 200px;
+  left: 200px;
+  z-index: 10;
+}
+#secondImg:hover + img {
+  display: block;
+  position: absolute; 
+  top: 500px;
+  left: 200px;
+  z-index: 10;
+  height: 80%;
+}
+
+#thirdImg:hover + img {
+  display: block;
+  position: absolute; 
+  top: 500px;
+  left: 200px;
+  z-index: 10;
+}
+
+
+/* Cursor Start */
+.cursor {
+  font-size: 12px;
+  color: #4AF626;
+  background-color: #4AF626;
+  position: relative;
+  opacity: 1;
+  height: 1.5em;
+  width: 10px;
+  max-width: 10px;
+  transform: translateY(4px);
+  overflow: hidden;
+  text-indent: -5px;
+  display: inline-block;
+  text-decoration: blink;
+  animation: blinker 1s linear infinite;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+#command {
+  cursor: text;
+  height: 50px;
+  color: #73ABAD;
+}
+#liner {
+  line-height: 1.3em;
+  margin-top: -2px;
+  animation: show 0.5s ease forwards;
+  animation-delay: 1.2s;
+  opacity: 0;
+}
+#liner::before {
+  color: #4AF626;
+  content: "visitor@Black_Forum_Terminal>";
+}
+#liner.password::before {
+  content: "Password:";
+}
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Cursor End */
+p {
+  display: block;
+  line-height: 1.3em;
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0;
+  letter-spacing: 0.05em;
+  animation: typing 0.5s steps(30, end);
+}
+.no-animation {
+  animation: typing 0 steps(30, end);
+}
+.margin {
+  margin-left: 20px;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+.index {
+  color: #DCDCCC;
+}
+.color2 {
+  
+  color: #4AF626;
+}
+.command {
+  color: #73ABAD;
+  text-shadow: 0 0 5px #73ABAD; 
+}
+.error {
+  color: #4AF626;
+}
+.white {
+  color: #fff;
+}
+.inherit,
+a {
+  color: #9C8394;
+}
+a {
+  text-decoration: inherit;
+}
+a:hover {
+  background: #73ABAD;
+  color: #211830;
+}
+a:focus {
+  outline: 0;
+}
+/* GLITCH EFFECT */
+.importantWord {
+  position: relative;
+  color: #4AF626;
+  z-index: 1;
+}
+
+.importantWord:before,
+.importantWord:after {
+  display: block;
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+}
+
+.importantWord:before {
+  animation: glitch-it 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+  color: #00FFFF;
+  z-index: -1;
+}
+
+.importantWord:after {
+  animation: glitch-it 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+  color: #FF00FF;
+  z-index: -2;
+}
+
+@keyframes glitch-it {
+  0% {
+     transform: translate(0);
+  }
+  20% {
+     transform: translate(-2px, 2px);
+  }
+  40% {
+     transform: translate(-2px, -2px);
+  }
+  60% {
+     transform: translate(2px, 2px);
+  }
+  80% {
+     transform: translate(2px, -2px);
+  }
+  to {
+     transform: translate(0);
+  }
+}
