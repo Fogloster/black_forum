@@ -100,7 +100,7 @@ function commander(cmd) {
       addLine("opening Blak Forum...", "color2", 100);
       setTimeout(function() {
         // НЕ ЗАБЫТЬ ПОМЕНЯТЬ УРЛ
-        window.open('file:///C:/Users/Radik/Desktop/vtm_project2/loading_page/loading_bar.html');
+        window.open('/loading_page/loading_page.html');
       }, 1000); 
         break; 
     case "password":
