@@ -99,8 +99,8 @@ function commander(cmd) {
     case "y":
       addLine("opening Blak Forum...", "color2", 100);
       setTimeout(function() {
-        // НЕ ЗАБЫТЬ ПОМЕНЯТЬ УРЛ
-        window.open('/loading_page/loading_page.html');
+        // REDIRECT TO LOADING BAR
+        window.open('https://fogloster.github.io/loadingpage/');
       }, 1000); 
         break; 
     case "password":
