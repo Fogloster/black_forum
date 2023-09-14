@@ -100,7 +100,7 @@ function commander(cmd) {
       addLine("opening Blak Forum...", "color2", 100);
       setTimeout(function() {
         // REDIRECT TO LOADING BAR
-        window.open('https://fogloster.github.io/loadingpage/');
+        window.open('https://fogloster.github.io/Black_forum_topics/');
       }, 1000); 
         break; 
     case "password":
