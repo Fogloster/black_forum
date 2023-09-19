@@ -17,6 +17,9 @@ body {
     color: #211830;
     background-color: #4AF626;
   }
+  ::-webkit-scrollbar {
+  display: none;
+  }
   textarea {
     left: -1000px;
     position: absolute;
