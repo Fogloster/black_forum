@@ -7,7 +7,7 @@ fairy_tale = [
   'wondering how she was ever to get <span class="importantWord" data-text="out">out</span> again.',
 
   'Suddenly she came upon a little three-legged table, all made of solid glass; there was nothing on it except a tiny golden key,',
-  'and A**ce’s first thought was that it might belong to <span class="importantWord" data-text="down">one</span> of the <span class="importantWord" data-text="door">door</span> of the hall; but, alas! either the locks were too large,',
+  'and A**ce’s first thought was that it might belong to <span class="importantWord" data-text="one">one</span> of the <span class="importantWord" data-text="door">door</span> of the hall; but, alas! either the locks were too large,',
   'or the key was too small, but at any rate it would not open any of them. However, the second time <span class="importantWord" data-text="round">round</span>,',
   'she came upon a low curtain she had not noticed before, and behind it was a little <span class="importantWord" data-text="door">door</span> about fifteen inches high:',
   'she tried the little golden key in the lock, and to her great delight it fitted!',
