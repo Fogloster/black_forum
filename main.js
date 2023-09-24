@@ -97,7 +97,7 @@ function commander(cmd) {
       pw = true;
       break;
     case "y":
-      addLine("opening Blak Forum...", "color2", 100);
+      addLine("Opening Black_Forum...", "color2", 100);
       setTimeout(function() {
         // REDIRECT TO LOADING BAR
         window.open('https://fogloster.github.io/Black_forum_topics/');
